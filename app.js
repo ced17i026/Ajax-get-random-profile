@@ -6,7 +6,7 @@ d3.select(".footer #btn")
     if(!response.ok){
       throw Error();
     }
-    return response.json();
+    return response.json();//this is parsing or we can say getting the json from the response
   }).then(function(data){
     d3.select("img")
         .attr('src',data.results[0].picture.medium);
